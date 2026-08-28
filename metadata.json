@@ -1,0 +1,6 @@
+{
+  "name": "Golf Weather SG",
+  "description": "Singapore golf weather intelligence and 1-100 Golfability score calculator based on real-time NEA forecasts and station readings.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
