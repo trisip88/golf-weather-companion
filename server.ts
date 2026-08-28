@@ -610,6 +610,16 @@ async function buildWeatherContract(courseId: string): Promise<NormalizedWeather
 async function startServer() {
   app.use(express.json());
 
+  // API Health Check
+  app.get('/api/health', (req, res) => {
+    res.json({
+      status: 'ok',
+      service: 'Golf Weather SG API',
+      timestamp: new Date().toISOString(),
+      uptime: process.uptime(),
+    });
+  });
+
   // API Route: Get Golf Courses List
   app.get('/api/courses', (req, res) => {
     res.json({

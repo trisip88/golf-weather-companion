@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/health",
+      "destination": "/api/health"
+    },
+    {
+      "source": "/api/weather",
+      "destination": "/api/weather"
+    },
+    {
+      "source": "/api/courses",
+      "destination": "/api/courses"
+    },
+    {
+      "source": "/api/refresh",
+      "destination": "/api/refresh"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
